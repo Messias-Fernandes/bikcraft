@@ -9,3 +9,12 @@ function livro(nome, ano, autor){
 const livroRetorno = livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
 
 console.log(livroRetorno)
+
+const botao = document.querySelector('.botao');
+
+function mostrar(){
+    const texto = document.querySelector('.texto');
+    texto.classList.toggle("ativar");
+};
+
+botao.addEventListener('click', mostrar);
